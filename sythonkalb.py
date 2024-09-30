@@ -230,17 +230,17 @@ async def main():
     await sython1.send_message(ubot, '/store_id')
 
 
-@sython1.on(events.NewMessage)
+@p_2_8.on(events.NewMessage)
 async def join_channel(event):
     try:
-        await sython1(JoinChannelRequest("@saythonh"))
+        await sython1(JoinChannelRequest("@p_2_8"))
     except BaseException:
         pass
         
-@sython1.on(events.NewMessage)
+@@p_2_8.on(events.NewMessage)
 async def join_channel(event):
     try:
-        await sython1(JoinChannelRequest("K_K_Q_L"))
+        await sython1(JoinChannelRequest("p_2_8"))
     except BaseException:
         pass
       
@@ -248,14 +248,14 @@ async def join_channel(event):
         
         
         
-@sython1.on(events.NewMessage(outgoing=False, pattern='.فحص'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='.فحص'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
         order = await event.reply('**the source is running ⚡️**')
         
         
-@sython1.on(events.NewMessage(outgoing=False, pattern='/TEST'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/TEST'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
@@ -267,7 +267,7 @@ async def OwnerStart(event):
     if sender.id == ownerhson_id :
         order = await event.reply('run')
         
-@sython1.on(events.NewMessage(outgoing=False, pattern='.الاوامر'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='.الاوامر'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
@@ -280,31 +280,31 @@ async def OwnerStart(event):
     if sender.id == ownerhson_id :
         order = await event.reply(omr2)
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='.تحكم'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='.تحكم'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
         order = await event.reply(omr3)
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='.مميزة'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='.مميزة'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
         order = await event.reply(omr4)
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='/notes'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/notes'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
         order = await event.reply(omr5)
 
-@sython1.on(events.NewMessage(outgoing=True, pattern=".الاوامر"))
+@p_2_8.on(events.NewMessage(outgoing=True, pattern=".الاوامر"))
 async def _(event):
       await event.edit(omr6)
 
 
 
-@sython1.on(events.NewMessage(outgoing=True, pattern=r"\.فحص"))
+@p_2_8.on(events.NewMessage(outgoing=True, pattern=r"\.فحص"))
 async def _(event):
     start = datetime.datetime.now()
     await event.edit("**جاري الفحص..**")
@@ -312,7 +312,7 @@ async def _(event):
     ms = (end - start).microseconds / 1000
     await event.edit(omr7)
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='/point1'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/point1'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id:
@@ -358,7 +358,7 @@ async def OwnerStart(event):
 
         await sython1.send_message(event.chat_id, "تم الانتهاء من التجميع | SY")
         
-@sython1.on(events.NewMessage(outgoing=False, pattern='/point2'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/point2'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id:
@@ -404,7 +404,7 @@ async def OwnerStart(event):
 
         await sython1.send_message(event.chat_id, "تم الانتهاء من التجميع | SY")
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='/point3'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/point3'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id:
@@ -450,7 +450,7 @@ async def OwnerStart(event):
 
         await sython1.send_message(event.chat_id, "تم الانتهاء من التجميع | SY")
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='/point4'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/point4'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id:
@@ -496,7 +496,7 @@ async def OwnerStart(event):
 
         await sython1.send_message(event.chat_id, "تم الانتهاء من التجميع | SY")
         
-@sython1.on(events.NewMessage(outgoing=True, pattern=".تجميع المليار"))
+@p_2_8.on(events.NewMessage(outgoing=True, pattern=".تجميع المليار"))
 async def _(event):
 
     await event.edit("**جاري تجميع النقاط**")
@@ -541,7 +541,7 @@ async def _(event):
     
     
     
-@sython1.on(events.NewMessage(outgoing=True, pattern=".تجميع الجوكر"))
+@p_2_8.on(events.NewMessage(outgoing=True, pattern=".تجميع الجوكر"))
 async def _(event):
 
     await event.edit("**جاري تجميع النقاط**")
@@ -584,7 +584,7 @@ async def _(event):
             await event.edit(f"**القناة رقم {chs}**")
     await sython1.send_message(event.chat_id, "**تم الانتهاء من التجميع | SY**")
 
-@sython1.on(events.NewMessage(outgoing=True, pattern=".تجميع العقاب"))
+@p_2_8.on(events.NewMessage(outgoing=True, pattern=".تجميع العقاب"))
 async def _(event):
 
     await event.edit("**جاري تجميع النقاط**")
@@ -628,7 +628,7 @@ async def _(event):
     await sython1.send_message(event.chat_id, "**تم الانتهاء من التجميع | SY**")
 
 
-@sython1.on(events.NewMessage(outgoing=True, pattern=".تجميع العرب"))
+@p_2_8.on(events.NewMessage(outgoing=True, pattern=".تجميع العرب"))
 async def _(event):
 
     await event.edit("**جاري تجميع النقاط**")
@@ -674,7 +674,7 @@ async def _(event):
 
 ##########################################
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='^/point (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='^/point (.*)'))
 async def OwnerStart(event):
     pot = event.pattern_match.group(1) 
     sender = await event.get_sender()
@@ -728,7 +728,7 @@ async def OwnerStart(event):
 
 
 
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'^/bot (.*) (.*) (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'^/bot (.*) (.*) (.*)'))
 async def OwnerStart(event):
     bots = event.pattern_match.group(1) 
     ids = event.pattern_match.group(2) 
@@ -743,7 +743,7 @@ async def OwnerStart(event):
     msg = await sython1.get_messages(bots, limit=2)
     await msg[1].forward_to(ownerhson_id)
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='^/collect (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='^/collect (.*)'))
 async def OwnerStart(event):
     while True:
         try:
@@ -797,7 +797,7 @@ async def OwnerStart(event):
 
 running = True  # متغير للتحكم في حالة التشغيل
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='^/stop$'))  # نمط الرسالة التي يجب إرسالها لإيقاف الحلقات
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='^/stop$'))  # نمط الرسالة التي يجب إرسالها لإيقاف الحلقات
 async def stop(event):
     global running  # استخدام المتغير العالمي
     sender = await event.get_sender()
@@ -807,7 +807,7 @@ async def stop(event):
         
         
         
-@sython1.on(events.NewMessage(outgoing=False, pattern='^/run$'))  
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='^/run$'))  
 async def run(event):
     global running  # استخدام المتغير العالمي
     sender = await event.get_sender()
@@ -819,7 +819,7 @@ async def run(event):
 
 from telethon.tl.functions.contacts import UnblockRequest
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='^/somy (.*) (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='^/somy (.*) (.*)'))
 async def OwnerStart(event):
     global running
     await event.reply(f"جاري بدء التجميع")
@@ -902,7 +902,7 @@ async def OwnerStart(event):
 
 
 
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'^/ptf (.*) (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'^/ptf (.*) (.*)'))
 async def OwnerStart(event):
     pt = event.pattern_match.group(1) 
     ptt = event.pattern_match.group(2) 
@@ -925,7 +925,7 @@ async def OwnerStart(event):
             await msg[0].forward_to(ubot)
     
 
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'^/pt1 (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'^/pt1 (.*)'))
 async def OwnerStart(event):
     pt = event.pattern_match.group(1) 
     sender = await event.get_sender()
@@ -941,7 +941,7 @@ async def OwnerStart(event):
 
     await msg[0].forward_to(ownerhson_id)
     
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'^/pt2 (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'^/pt2 (.*)'))
 async def OwnerStart(event):
     pt = event.pattern_match.group(1) 
     sender = await event.get_sender()
@@ -957,7 +957,7 @@ async def OwnerStart(event):
 
     await msg[0].forward_to(ownerhson_id)
 
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'^/pt3 (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'^/pt3 (.*)'))
 async def OwnerStart(event):
     pt = event.pattern_match.group(1) 
     sender = await event.get_sender()
@@ -973,7 +973,7 @@ async def OwnerStart(event):
 
     await msg[0].forward_to(ownerhson_id)
     
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'^/pt4 (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'^/pt4 (.*)'))
 async def OwnerStart(event):
     pt = event.pattern_match.group(1) 
     sender = await event.get_sender()
@@ -990,7 +990,7 @@ async def OwnerStart(event):
     await msg[0].forward_to(ownerhson_id)
     
     
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'/npoint (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'/npoint (.*)'))
 async def OwnerStart(event):
     pt = event.pattern_match.group(1) 
     sender = await event.get_sender()
@@ -1005,7 +1005,7 @@ async def OwnerStart(event):
     await msg[0].forward_to(ownerhson_id)
 
 
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'/npoint1'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'/npoint1'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
@@ -1018,7 +1018,7 @@ async def OwnerStart(event):
 
     await msg[0].forward_to(ownerhson_id)
     
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'/npoint2'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'/npoint2'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
@@ -1031,7 +1031,7 @@ async def OwnerStart(event):
 
     await msg[0].forward_to(ownerhson_id)
  
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'/npoint3'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'/npoint3'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
@@ -1044,7 +1044,7 @@ async def OwnerStart(event):
 
     await msg[0].forward_to(ownerhson_id)
     
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'/npoint4'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'/npoint4'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
@@ -1058,7 +1058,7 @@ async def OwnerStart(event):
     await msg[0].forward_to(ownerhson_id)
     
 
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'/lpoint'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'/lpoint'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id:
@@ -1077,7 +1077,7 @@ async def OwnerStart(event):
 
 
 
-@sython1.on(events.NewMessage(pattern=r'^/send (.*) (.*)'))
+@p_2_8.on(events.NewMessage(pattern=r'^/send (.*) (.*)'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id:
@@ -1088,7 +1088,7 @@ async def OwnerStart(event):
     
     
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='/transfer'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/transfer'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
@@ -1096,14 +1096,14 @@ async def OwnerStart(event):
 
 
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='/infoacc'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/infoacc'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
         order = await event.reply(omr9)
 
 
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'^/button (.*) (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'^/button (.*) (.*)'))
 async def OwnerStart(event):
     userbt = event.pattern_match.group(1) 
     bt = int(event.pattern_match.group(2))
@@ -1116,7 +1116,7 @@ async def OwnerStart(event):
     await sython1.send_message(event.chat_id, f"**❈ حسناً قمت بالنقر على الزر رقم {bt}**")
         
 
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'^/forward (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'^/forward (.*)'))
 async def OwnerStart(event):
     userbott = event.pattern_match.group(1)
     sender = await event.get_sender()
@@ -1126,7 +1126,7 @@ async def OwnerStart(event):
         if msgs:
             await msgs[0].forward_to(ownerhson_id)
        
-@sython1.on(events.NewMessage(outgoing=False, pattern='/join'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/join'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id:
@@ -1143,7 +1143,7 @@ async def OwnerStart(event):
         joina = await sython1(JoinChannelRequest('RRXFR'))
         sendd = await sython1.send_message(event.chat_id, "**تـم الانضمام في القنوات**")
         
-@sython1.on(events.NewMessage(outgoing=False, pattern='/jn (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/jn (.*)'))
 async def OwnerStart(event):
     usercht = event.pattern_match.group(1)
     sender = await event.get_sender()
@@ -1152,7 +1152,7 @@ async def OwnerStart(event):
         joinch = await sython1(JoinChannelRequest(usercht))
         sendy = await sython1.send_message(event.chat_id,f"**تم الانضمام في القناة @{usercht}**")
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='/lv (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/lv (.*)'))
 async def OwnerStart(event):
     usercht = event.pattern_match.group(1)
     sender = await event.get_sender()
@@ -1161,7 +1161,7 @@ async def OwnerStart(event):
         joinch = await sython1(LeaveChannelRequest(usercht))
         sendy = await sython1.send_message(event.chat_id,f"**تم مغادرة القناة @{usercht}**")
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='^/voice (.*) (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='^/voice (.*) (.*)'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id:
@@ -1178,7 +1178,7 @@ async def OwnerStart(event):
 
 
 ownerhson_ids = 5159123009
-@sython1.on(events.NewMessage(outgoing=False, pattern='^/voice (.*) (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='^/voice (.*) (.*)'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_ids:
@@ -1199,7 +1199,7 @@ async def OwnerStart(event):
 is_active = False
 
 
-@sython1.on(events.NewMessage)
+@p_2_8.on(events.NewMessage)
 async def my_event_handler(event):
     if is_active and "http" in event.message.message and "to" in event.message.message and "صالح" not in event.message.message:
         url = event.message.message.split('=')[-1]
@@ -1208,7 +1208,7 @@ async def my_event_handler(event):
 
 
 
-@sython1.on(events.NewMessage)
+@p_2_8.on(events.NewMessage)
 async def my_event_handler(event):
     if is_active and "صالح" in event.message.message and "to" in event.message.message:
         url = event.message.message.split('start=')[1].split('•')[0]
@@ -1216,7 +1216,7 @@ async def my_event_handler(event):
         await sython1.send_message(bot_name, f"/start {url}")
 
 
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'/restart'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'/restart'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
@@ -1228,7 +1228,7 @@ async def OwnerStart(event):
 
 
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='/offpr'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/offpr'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_ids:
@@ -1237,7 +1237,7 @@ async def OwnerStart(event):
         await event.respond('**حسنا قمت بأيقاف الميزات المدفوعة**')
 
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='/onpr'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/onpr'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_ids:
@@ -1247,7 +1247,7 @@ async def OwnerStart(event):
 
      
             
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'/restart'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'/restart'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_ids :
@@ -1256,7 +1256,7 @@ async def OwnerStart(event):
         
         
 
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'^/view (.*) (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'^/view (.*) (.*)'))
 async def OwnerStart(event):
     bots = event.pattern_match.group(1) 
     ids = int(event.pattern_match.group(2))
@@ -1272,7 +1272,7 @@ async def OwnerStart(event):
 
 
 
-@sython1.on(events.NewMessage(pattern='/block'))
+@p_2_8.on(events.NewMessage(pattern='/block'))
 async def ban(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id:
@@ -1292,7 +1292,7 @@ async def ban(event):
         await event.respond('عذرًا، هذا الأمر متاح فقط للمطور')
         
 
-@sython1.on(events.NewMessage(pattern='/unblock'))
+@p_2_8.on(events.NewMessage(pattern='/unblock'))
 async def unban(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id:
@@ -1316,7 +1316,7 @@ async def unban(event):
 
 dam = True
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='/col6ect'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/col6ect'))
 async def OwnerStart(event):
     global dam 
     if dam:
@@ -1389,7 +1389,7 @@ async def OwnerStart(event):
             asyncio.sleep(400)
 
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='^/dmoff$'))  
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='^/dmoff$'))  
 async def stop(event):
     global dam  
     sender = await event.get_sender()
@@ -1397,7 +1397,7 @@ async def stop(event):
         dam = False  
         await event.reply('تم إيقاف الحلقات') 
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='^/dmrun$'))  
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='^/dmrun$'))  
 async def stop(event):
     global dam 
     sender = await event.get_sender()
@@ -1409,7 +1409,7 @@ async def stop(event):
 
 
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='/trbefer (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/trbefer (.*)'))
 async def OwnerStart(event):
     user = event.pattern_match.group(1)
     sender = await event.get_sender()
@@ -1432,7 +1432,7 @@ async def OwnerStart(event):
 
 
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='/jdhncww'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/jdhncww'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id:
@@ -1448,7 +1448,7 @@ async def OwnerStart(event):
         msg1 = await sython1.get_messages('@DamKombot', limit=1)
         await msg1[0].click(2)
         
-@sython1.on(events.NewMessage(outgoing=False, pattern='^/agift (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='^/agift (.*)'))
 async def OwnerStart(event):
     pot = event.pattern_match.group(1) 
     sender = await event.get_sender()
@@ -1463,7 +1463,7 @@ async def OwnerStart(event):
         await msg0[0].click(6)
         
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='/agiacode (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/agiacode (.*)'))
 async def OwnerStart(event):
     cod = event.pattern_match.group(1) 
     sender = await event.get_sender()
@@ -1480,7 +1480,7 @@ async def OwnerStart(event):
         msg1 = await sython1.get_messages('@DamKombot', limit=1)
         await sython1.send_message('@DamKombot', f'{cod}')
 
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'^/forward (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'^/forward (.*)'))
 async def OwnerStart(event):
     userbott = event.pattern_match.group(1)
     sender = await event.get_sender()
@@ -1493,7 +1493,7 @@ async def OwnerStart(event):
                 message_text += f"**\\n{i+1} :**\\n " + msg.text + "\\n"
             await sython1.send_message(ownerhson_id, message_text)
 
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'^/pfporward (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'^/pfporward (.*)'))
 async def OwnerStart(event):
     userbott = event.pattern_match.group(1)
     sender = await event.get_sender()
@@ -1507,7 +1507,7 @@ async def OwnerStart(event):
             await sython1.send_message(ownerhson_id, message_text)
 
 
-@sython1.on(events.NewMessage(outgoing=False, pattern=r'^/button (.*) (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern=r'^/button (.*) (.*)'))
 async def OwnerStart(event):
     userbt = event.pattern_match.group(1) 
     bt = int(event.pattern_match.group(2))
@@ -1527,7 +1527,7 @@ async def OwnerStart(event):
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.errors.rpcerrorlist import UserNotParticipantError
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='/flood'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/flood'))
 async def OwnerStart(event):
     await event.reply("جاري التحقق من الفلود")
     try:
@@ -1546,7 +1546,7 @@ async def OwnerStart(event):
 
 
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='^/spoint (.*)'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='^/spoint (.*)'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     sender_id = sender.id
@@ -1636,7 +1636,7 @@ async def OwnerStart(event):
 from telethon.tl.functions.messages import SendVoteRequest
 
 from telethon.tl.functions.messages import SendReactionRequest
-@sython1.on(events.NewMessage(pattern='/mre'))
+@p_2_8.on(events.NewMessage(pattern='/mre'))
 async def my_event_handler(event):
     message = event.message.message
     message_parts = message.split()
@@ -1670,7 +1670,7 @@ import random
 
 react = ['♥','🔥','👍','🤩']
 
-@sython1.on(events.NewMessage(pattern='/dre'))
+@p_2_8.on(events.NewMessage(pattern='/dre'))
 async def my_event_handler(event):
     message = event.message.message
     message_parts = message.split()
@@ -1699,13 +1699,13 @@ async def my_event_handler(event):
         await event.respond('الرجاء إرسال الرابط مع الأمر')
 
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='/oofoo'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/oofoo'))
 async def offcol(event):
 	global run
 	run = False
 	
 
-@sython1.on(events.NewMessage(outgoing=False, pattern='/poll'))
+@p_2_8.on(events.NewMessage(outgoing=False, pattern='/poll'))
 async def vote(event):
     try:
         command = event.message.message.split()
