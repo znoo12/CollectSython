@@ -142,7 +142,7 @@ async def handler(event):
     if data == 'sython':
         await bot.send_message(OWNER_ID, f"""**∘ بوت سايثون لتجميع النقاط واوامر اخرى 
 
-∘ مطور ومبرمج البوت حسام - @T_4_Z
+∘ مطور ومبرمج البوت حسام - @p_2_8
 
 ∘ اصدار البوت = 4 Version شبه منقح**""")
 
